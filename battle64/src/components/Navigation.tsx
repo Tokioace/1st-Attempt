@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navItems = [
   { path: '/', label: '🏠 HOME', icon: '🏠' },
@@ -11,7 +11,6 @@ const navItems = [
 ];
 
 export const Navigation: React.FC = () => {
-  const location = useLocation();
 
   return (
     <nav>
