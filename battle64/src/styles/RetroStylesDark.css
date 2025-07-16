@@ -1,0 +1,260 @@
+/* 🕹️ Battle64 - Dark Mode Retro Styles */
+
+[data-theme="dark"] {
+  /* Dark Mode Color Palette */
+  --retro-primary: #00ff00;
+  --retro-secondary: #ff00ff;
+  --retro-accent: #ffff00;
+  --retro-bg: #0a0a0a;
+  --retro-text: #e0e0e0;
+  --retro-border: #00ff00;
+  --retro-shadow: #00ff00;
+  
+  /* Dark Mode Specific Colors */
+  --retro-bg-secondary: #1a1a1a;
+  --retro-bg-tertiary: #2a2a2a;
+  --retro-text-secondary: #b0b0b0;
+  --retro-text-muted: #808080;
+  --retro-border-secondary: #333333;
+  --retro-overlay: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark Mode Specific Styles */
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, var(--retro-bg) 0%, #000000 100%);
+}
+
+[data-theme="dark"] .retro-card {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-card:hover {
+  background: var(--retro-bg-tertiary);
+  border-color: var(--retro-border);
+}
+
+[data-theme="dark"] .retro-nav {
+  background: var(--retro-overlay);
+  border-bottom-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-section {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-input {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+[data-theme="dark"] .retro-input:focus {
+  background: var(--retro-bg-tertiary);
+  border-color: var(--retro-accent);
+}
+
+[data-theme="dark"] .retro-input::placeholder {
+  color: var(--retro-text-muted);
+}
+
+/* Dark Mode Button Variations */
+[data-theme="dark"] .retro-button {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+[data-theme="dark"] .retro-button:hover {
+  background: var(--retro-primary);
+  color: var(--retro-bg);
+  border-color: var(--retro-primary);
+}
+
+[data-theme="dark"] .retro-button.secondary {
+  background: var(--retro-bg-tertiary);
+  border-color: var(--retro-secondary);
+  color: var(--retro-secondary);
+}
+
+[data-theme="dark"] .retro-button.secondary:hover {
+  background: var(--retro-secondary);
+  color: var(--retro-bg);
+}
+
+/* Dark Mode Text Variations */
+[data-theme="dark"] .retro-text-secondary {
+  color: var(--retro-text-secondary);
+}
+
+[data-theme="dark"] .retro-text-muted {
+  color: var(--retro-text-muted);
+}
+
+/* Dark Mode Glow Effects */
+[data-theme="dark"] .retro-glow {
+  box-shadow: 0 0 15px var(--retro-primary);
+}
+
+[data-theme="dark"] .retro-card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+/* Dark Mode Scanlines */
+[data-theme="dark"] .retro-scanlines::before {
+  background: linear-gradient(
+    transparent 50%,
+    rgba(0, 255, 0, 0.03) 50%
+  );
+}
+
+/* Dark Mode Loading */
+[data-theme="dark"] .retro-loading {
+  border-color: var(--retro-border-secondary);
+  border-top-color: var(--retro-primary);
+}
+
+/* Dark Mode Navigation Links */
+[data-theme="dark"] .retro-nav-link {
+  color: var(--retro-text-secondary);
+}
+
+[data-theme="dark"] .retro-nav-link:hover {
+  color: var(--retro-primary);
+}
+
+[data-theme="dark"] .retro-nav-link.active {
+  color: var(--retro-accent);
+}
+
+/* Dark Mode Modal/Overlay */
+[data-theme="dark"] .retro-modal {
+  background: var(--retro-overlay);
+}
+
+[data-theme="dark"] .retro-modal-content {
+  background: var(--retro-bg-secondary);
+  border: var(--retro-border-width) solid var(--retro-border-secondary);
+}
+
+/* Dark Mode Form Elements */
+[data-theme="dark"] .retro-select {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+[data-theme="dark"] .retro-textarea {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+/* Dark Mode Table */
+[data-theme="dark"] .retro-table {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-table th,
+[data-theme="dark"] .retro-table td {
+  border-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-table th {
+  background: var(--retro-bg-tertiary);
+  color: var(--retro-text);
+}
+
+[data-theme="dark"] .retro-table tr:hover {
+  background: var(--retro-bg-tertiary);
+}
+
+/* Dark Mode Code Blocks */
+[data-theme="dark"] .retro-code {
+  background: var(--retro-bg-tertiary);
+  border: var(--retro-border-width) solid var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+/* Dark Mode Progress Bars */
+[data-theme="dark"] .retro-progress {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+}
+
+[data-theme="dark"] .retro-progress-bar {
+  background: var(--retro-primary);
+}
+
+/* Dark Mode Tooltips */
+[data-theme="dark"] .retro-tooltip {
+  background: var(--retro-bg-tertiary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+/* Dark Mode Notifications */
+[data-theme="dark"] .retro-notification {
+  background: var(--retro-bg-secondary);
+  border-color: var(--retro-border-secondary);
+  color: var(--retro-text);
+}
+
+[data-theme="dark"] .retro-notification.success {
+  border-color: var(--retro-primary);
+  background: rgba(0, 255, 0, 0.1);
+}
+
+[data-theme="dark"] .retro-notification.error {
+  border-color: #ff0000;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .retro-notification.warning {
+  border-color: var(--retro-accent);
+  background: rgba(255, 255, 0, 0.1);
+}
+
+/* Dark Mode Sidebar */
+[data-theme="dark"] .retro-sidebar {
+  background: var(--retro-bg-secondary);
+  border-right: var(--retro-border-width) solid var(--retro-border-secondary);
+}
+
+/* Dark Mode Footer */
+[data-theme="dark"] .retro-footer {
+  background: var(--retro-bg-secondary);
+  border-top: var(--retro-border-width) solid var(--retro-border-secondary);
+  color: var(--retro-text-secondary);
+}
+
+/* Dark Mode Scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 12px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--retro-bg-secondary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--retro-border-secondary);
+  border-radius: 6px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--retro-border);
+}
+
+/* Dark Mode Selection */
+[data-theme="dark"] ::selection {
+  background: var(--retro-primary);
+  color: var(--retro-bg);
+}
+
+[data-theme="dark"] ::-moz-selection {
+  background: var(--retro-primary);
+  color: var(--retro-bg);
+}
